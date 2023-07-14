@@ -1,0 +1,1208 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poiret+One&family=Tangerine:wght@400;700&display=swap');
+
+
+@font-face {
+    font-family:'Nordic';
+    src: url('../fonts/Nordic\ Alternative\ Regular.ttf');
+}
+
+:root {
+    --nordic-font:'Nordic';
+    --main-font:'Poiret One', cursive;
+    --tangerine-font: 'Tangerine', cursive;
+    --cinzel-font:'Cinzel Decorative', cursive;
+    --color-white:#fafaff;
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+img {
+    user-select: none !important;
+    -webkit-user-drag: none !important; 
+}
+
+html {
+    min-height:100vh;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+div#content {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+    margin:0;
+}
+
+/* -------------------------------- HEADER STYLING SECTION START --------------------------------  */
+
+div#content div.header {
+    height:fit-content;
+     background:linear-gradient(#00000055,#00000055), url(../images/marble-texture.jpg);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+div#content div.header h1 {
+    font-family:var(--nordic-font);
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:3.5rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+
+    background:
+    -moz-linear-gradient(
+    -72deg,
+    #ffde45,
+    #ffffff 16%,
+    #ffde45 21%,
+    #ffffff 24%,
+    #452100 27%,
+    #ffde45 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #ffde45 72%,
+    #ffffff 80%,
+    #ffde45 84%,
+    #452100
+  );
+  background:
+  -webkit-linear-gradient(
+    -72deg,
+    #ffde45,
+    #ffffff 16%,
+    #ffde45 21%,
+    #ffffff 24%,
+    #452100 27%,
+    #ffde45 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #ffde45 72%,
+    #ffffff 80%,
+    #ffde45 84%,
+    #452100
+  );
+  background:
+  -o-linear-gradient(
+    -72deg,
+    #ffde45,
+    #ffffff 16%,
+    #ffde45 21%,
+    #ffffff 24%,
+    #452100 27%,
+    #ffde45 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #ffde45 72%,
+    #ffffff 80%,
+    #ffde45 84%,
+    #452100
+  );
+  background:
+  linear-gradient(
+    -72deg,
+    #ffde45,
+    #ffffff 16%,
+    #ffde45 21%,
+    #ffffff 24%,
+    #452100 27%,
+    #ffde45 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #ffde45 72%,
+    #ffffff 80%,
+    #ffde45 84%,
+    #452100
+  );
+    background-size:150%; 
+    color:transparent;
+    -webkit-background-clip:text;
+    background-clip:text;
+    transition:all 500ms ease-in;
+}
+
+div#content div.header h1:hover {
+    background-size:300%;
+}
+
+div#content div.header ul.nav-bar {
+    display:flex;
+    justify-content: space-evenly;
+    gap:15px;
+    list-style-type: none;
+}
+
+div#content div.header ul.nav-bar li {
+    color: var(--color-white);
+    font-family:var(--main-font);
+    padding:15px;
+    font-weight:900;
+    font-size:1.2rem;
+}
+
+div#content div.header ul.nav-bar li:hover {
+    border:1px solid var(--color-white);
+    transition:all 150ms ease-in-out;
+    cursor:pointer;
+}
+
+/* ----------------------------- HEADER STYLING SECTION END-----------------------------*/
+
+/* -------------------------------- HOME STYLING SECTION START --------------------------------  */
+/* -------------------------------- Left side image, start --------------------------------  */
+div#content div.main-content {
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+div#content div.main-content div.image-side:first-child {
+    display:flex;
+    justify-content: center;   
+    align-items: start;
+}
+
+div#content div.main-content div.image-side:first-of-type > div {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-image:radial-gradient( circle, #fff75e, #ffda3d, #fdb833, #ffda3d, #fff75e, #fdb833, #ffda3d, #fff75e, #ffda3d, #fdb833);
+    background-size:100%;
+    background-position:center;
+    -webkit-mask-image:url('./../images/nordic-symbol.svg');
+    mask-image:url('./../images/nordic-symbol.svg');
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    transition:all 300ms ease;
+    margin-top:50px;
+    rotate:15deg;
+}
+
+div#content div.main-content div.image-side:first-of-type > div:hover {
+    background-size:300%;
+}
+
+div#content div.main-content div.image-side:first-of-type > div img {
+    width: 60%;
+    visibility:hidden;
+}
+
+/* -------------------------------- Left side image, end --------------------------------  */
+
+/* -------------------------------- Right side image, start --------------------------------  */
+
+div#content div.main-content div.image-side:last-of-type {
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+div#content div.main-content div.image-side:last-of-type > div {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-image:radial-gradient( circle, #fff75e, #ffda3d, #fdb833, #ffda3d, #fff75e, #fdb833, #ffda3d, #fff75e, #ffda3d, #fdb833);
+    background-size:100%;
+    background-position:center;
+    -webkit-mask-image: url('./../images/wood-axe.svg');
+    mask-image: url('./../images/wood-axe.svg');
+    -webkit-mask-size:100% 100%;
+    mask-size:100% 100%;
+    transition:all 500ms ease;
+    margin-bottom:25px;
+}
+
+div#content div.main-content div.image-side:last-of-type > div:hover {
+    background-size:300%;
+}
+
+div#content div.main-content div.image-side:last-of-type > div img {
+    width: 75%;
+    visibility: hidden;
+}
+
+/* -------------------------------- Right side image, end --------------------------------  */
+
+/* -------------------------------- Middle section, start --------------------------------  */
+
+div#content div.main-content div.home-info {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+div#content div.main-content div.home-info h1 {
+    font-family:var(--tangerine-font);
+    font-size:4rem;
+    text-align:center;
+    padding: 25px 0;
+}
+
+
+div#content div.main-content div.home-info div.separator {
+    width: 150px;
+    height: 3px;
+    background-color:gold;   
+}
+
+div#content div.main-content div.home-info h5 {
+    font-family:var(--main-font);
+    font-weight:900;
+    font-size:1.4rem;
+    text-align:center;
+    margin:50px;
+    letter-spacing:4px;
+
+}
+
+div#content div.main-content div.home-info div.business-hours {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width: 100%;
+    padding:15px;
+    margin-bottom:15px;
+}
+
+div#content div.main-content div.home-info div.business-hours h2 {
+    letter-spacing: 4px;
+    font-weight:500;
+    font-family:var(--cinzel-font);
+    margin:10px 0;
+}
+
+div#content div.main-content div.home-info div.business-hours p {
+    font-family:var(--main-font);
+    font-size:1.5rem;
+    margin:5px 0;
+}
+
+div#content div.main-content div.home-info p {
+    font-family:var(--main-font);
+    margin:10px 0;
+    text-align:center;
+}
+
+/* -------------------------------- Middle section, end --------------------------------  */
+/* -------------------------------- HOME STYLING SECTION END --------------------------------  */
+/* =============================================================================================== */
+/* -------------------------------- MENU STYLING SECTION START --------------------------------  */
+
+div#content div.menu-section {
+    height: 100%;
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+}
+
+
+/* -------------------------------- Left image side, start --------------------------------  */
+
+div#content div.menu-section div.image-side img {
+    width: 100%;
+}
+
+div#content div.menu-section div.image-side.left {
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+div#content div.menu-section div.image-side.left > div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+/* -------------------------------- First image, start --------------------------------  */
+
+div#content div.menu-section div.image-side.left > div:first-of-type {
+    /* margin-bottom:100%; */
+    width:100%;
+    background-image:linear-gradient(#000000, #000000);
+    -webkit-mask-image:url('./../images/breakfast.svg');
+    mask-image:url('./../images/breakfast.svg');
+    -webkit-mask-size:100% 100%;
+    mask-size: 100% 100%;
+    margin-left:8%;
+}
+
+div#content div.menu-section div.image-side.left > div:first-of-type img{
+    /* width: 115%;
+    margin-left:20%; */
+    visibility:hidden;
+}
+
+/* -------------------------------- First image, end --------------------------------  */
+
+/* -------------------------------- Second image, start --------------------------------  */
+
+
+
+div#content div.menu-section div.image-side.left > div:nth-of-type(2) {
+    background-image:radial-gradient( circle, #fff75e, #ffda3d, #fdb833, #ffda3d, #fff75e, #fdb833, #ffda3d, #fff75e, #ffda3d, #fdb833);
+    background-size:100%;
+    background-position:center;
+    -webkit-mask-image: url('./../images/leaf-decoration-1-gold.svg');
+    mask-image: url('./../images/leaf-decoration-1-gold.svg');
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    transition:all 250ms ease;
+    margin-left:-10%;
+    width: 150%;
+    position:relative;
+    z-index:1000;
+}
+
+div#content div.menu-section div.image-side.left > div:nth-of-type(2):hover {
+    background-size:200%;
+}
+
+div#content div.menu-section div.image-side.left > div:nth-of-type(2) img {
+    visibility:hidden;
+}
+
+/* -------------------------------- Second image, end --------------------------------  */
+
+/* -------------------------------- Third image, start --------------------------------  */
+div#content div.menu-section div.image-side.left > div:last-of-type {
+    display:flex;
+    justify-content:flex-start;
+}
+
+div#content div.menu-section div.image-side.left > div:last-of-type img{
+    width: 70%;
+    margin-left:5%;
+
+}
+/* -------------------------------- Third image, end --------------------------------  */
+/* -------------------------------- Left image side, end --------------------------------  */
+
+/* -------------------------------- Right image side, start --------------------------------  */
+/* -------------------------------- First image, start --------------------------------  */
+
+div#content div.menu-section div.image-side.right {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+div#content div.menu-section div.image-side.right div:first-of-type {
+    width:115%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image:radial-gradient( circle, #fff75e, #ffda3d, #fdb833, #ffda3d, #fff75e, #fdb833, #ffda3d, #fff75e, #ffda3d, #fdb833);
+    background-size:100%;
+    background-position:center;
+    -webkit-mask-image:url('./../images/decoration-gold.svg');
+    mask-image:url('./../images/decoration-gold.svg');
+    -webkit-mask-size:100% 100%;
+    mask-size:100% 100%;
+    mask-image:url('./../images/decoration-gold.svg');
+    transition:all 250ms ease;
+    margin: 5% 20% 0 0;
+    position:relative;
+    z-index:1000;
+}
+
+div#content div.menu-section div.image-side.right div:first-of-type:hover {
+    background-size:200%;
+}
+
+div#content div.menu-section div.image-side.right div:first-of-type img{
+    visibility:hidden;
+}
+
+/* -------------------------------- First image, end --------------------------------  */
+
+/* -------------------------------- Third image, start --------------------------------  */
+div#content div.menu-section div.image-side.right div:last-of-type {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    background-image:radial-gradient( circle, #fff75e, #ffda3d, #fdb833, #ffda3d, #fff75e, #fdb833, #ffda3d, #fff75e, #ffda3d, #fdb833);
+    background-size:100%;
+    background-position:center;
+    -webkit-mask-image: url('./../images/flower-gold.svg');
+    mask-image: url('./../images/flower-gold.svg');
+    -webkit-mask-size:100% 100%;
+    mask-size:100% 100%;
+    transition:all 500ms ease;
+    transform:scaleX(-1);
+    width: 85%;
+}
+
+div#content div.menu-section div.image-side.right div:last-of-type:hover {
+    background-size:200%;
+}
+
+div#content div.menu-section div.image-side.right div:last-of-type img {
+    visibility:hidden;
+}
+/* -------------------------------- Third image, end --------------------------------  */
+/* -------------------------------- Right image side, end --------------------------------  */
+/* -------------------------------- Middle menu section, start --------------------------------  */
+
+div#content div.menu-section div.menu-info {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+ }
+
+div#content div.menu-section div.menu-info h2 {
+    font-family:var(--tangerine-font);
+    font-size:4rem;
+    margin:25px;
+}
+
+div#content div.menu-section div.menu-info div.separator {
+    width: 150px;
+    height: 3px;
+    background-color: gold;
+    margin-bottom:50px;
+}
+
+div#content div.menu-section div.menu-info div.item-container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:50px;
+    width:100%;
+}
+
+div#content div.menu-section div.menu-info div.item-container p.title {
+    margin:10px;
+    font-size:1.65rem;
+    font-family:var(--cinzel-font);
+    font-style: italic;
+}
+
+div#content div.menu-section div.menu-info div.item-container p.info {
+    width:50%;
+    font-family:var(--main-font);
+    text-align:center;
+    font-size:1.25rem;
+    font-weight:500;
+    margin:5px;
+}
+
+div#content div.menu-section div.menu-info div.item-container p.price {
+    font-weight:900;
+    font-size:1.2rem;
+    font-family:var(--main-font);
+    margin:5px;
+    letter-spacing:3px;
+}
+
+div#content div.menu-section div.menu-info h3 {
+    text-align:center;
+    border:1px solid gold;
+    padding:15px;
+    font-size:1.5rem;
+    font-family:var(--main-font);
+    margin-bottom:25px;
+}
+
+/* -------------------------------- Middle menu section, end --------------------------------  */
+/* -------------------------------- MENU STYLING SECTION END --------------------------------  */
+
+/* -------------------------------- RESERVATION STYLING SECTION START --------------------------------  */
+div#content div.reservation-section {
+    background-size:cover;
+    background-repeat:no-repeat;
+    display: grid;
+    height: 100vh;
+    place-items:center;
+}
+
+div#content div.reservation-section div.form-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color:#ffffff;
+    border-radius:15px;
+    width: 55%;
+    height: fit-content;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    overflow: hidden;
+    padding:50px;
+}
+
+div#content div.reservation-section div.form-container div.title{
+    display:flex;
+    flex-direction:column;
+    border-bottom: 1px solid #00000011;
+    gap:25px;  
+    padding-bottom:25px;
+}
+
+div#content div.reservation-section div.form-container div.title h2 {
+     font-size:2rem;
+    font-family:var(--cinzel-font);
+    font-weight:lighter;
+    text-decoration: underline gold;
+    text-underline-offset: 10px;
+}
+
+div#content div.reservation-section div.form-container div.title h5 {
+    font-family:var(--main-font);
+     font-size:1rem;
+    letter-spacing:3px;
+
+}
+
+
+div#content div.reservation-section div.form-container form {
+    display:flex;
+    flex-direction:column;
+    padding-top:25px;
+    gap:25px;
+ }
+
+div#content div.reservation-section div.form-container form div.form-line {
+    display:flex;
+    justify-content:flex-end;
+    width: 100%;
+}
+
+div#content div.reservation-section div.form-container form div.form-line div {
+    display:flex;
+    flex-direction:column;
+}
+
+div#content div.reservation-section div.form-container form div.form-line p {
+    width:49%;
+} 
+
+div#content div.reservation-section div.form-container form div.form-line > div.names {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction: row;
+    width: 51%;
+    gap:10px;
+}
+
+div#content div.reservation-section div.form-container form div.form-line > div.names > div {
+    width:50%;
+}
+
+div#content div.reservation-section div.form-container form div.form-line div input.name {
+    width:100%;
+    padding:5px;
+    outline:gold;
+    border:1px solid gold;
+    border-radius:2px;
+}
+
+div#content div.reservation-section div.form-container form div.form-line-type2 {
+    display:flex;
+    justify-content:space-between;
+}
+
+div#content div.reservation-section div.form-container form div.form-line p, div.form-line-type2 label {
+    font-weight:900;
+    font-family:var(--main-font);
+    font-size:1.2rem;
+     margin-right:auto;
+}
+
+div#content div.reservation-section div.form-container form div.form-line div label {
+    font-family:var(--main-font);
+    padding:5px;
+}
+
+div#content div.reservation-section div.form-container form div.form-line-type2 input {
+    width: 50%;
+    margin-right:5px;
+    outline:gold;
+    border:1px solid gold;
+    border-radius:2px;
+    padding:5px 5px;
+}
+
+div#content div.reservation-section div.form-container form div.form-line-type2 select, textarea {
+    background-color: transparent;
+    width: 50%;
+    margin-right:5px;
+    border:1px solid gold;
+    border-radius:2px;
+    text-align:left;
+    outline:gold;
+    padding:5px;
+} 
+
+div#content div.reservation-section div.form-container input, select, textarea {
+    transition:all 300ms ease-in-out;
+}
+
+div#content div.reservation-section div.form-container input:hover, select:hover, textarea:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+div#content div.reservation-section div.form-container input:focus, select:focus, textarea:focus button:hover {
+    box-shadow: rgba(255, 215, 0, 0.678) 0px 0px 0px 3px;
+}
+
+div#content div.reservation-section div.form-container button {
+    margin-top:25px;
+    border:1px solid gold;
+    background-color:transparent;
+    border-radius:3px;
+    font-family:var(--main-font);
+    padding:14px;
+    font-weight:500;
+    letter-spacing:2px;
+    font-size:1.1rem;
+    transition:all 250ms ease-in-out;
+}
+
+div#content div.reservation-section div.form-container button:hover {
+    background-color: gold;
+    color:white;
+    font-weight:900;
+    scale:1.05;
+}
+
+div#content div.reservation-section div.form-container button:active {
+    scale:0.9;
+}
+
+/* -------------------------------- RESERVATION STYLING SECTION END --------------------------------  */
+
+
+/* -------------------------------- ABOUT US STYLING SECTION START --------------------------------  */
+
+div#content div.about-us-section {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+}
+
+
+/* -------------------------------- ABOUT US STYLING SECTION | CAROUSEL | START --------------------------------  */
+@keyframes fade {
+    from {
+        opacity:0.4;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+div#content div.about-us-section div#slider {
+    width:100%;
+    height:25%;
+    overflow:hidden;
+    flex-shrink:0;
+
+}
+
+div#content div.about-us-section div#slider div.slides {
+    overflow:hidden;
+    animation-name:fade;
+    animation-duration:1s;
+    display:none;
+}
+
+div#content div.about-us-section div#slider div.slides img {
+    height: 50%;
+}
+
+div#content div.about-us-section div#slider div#dot {
+    margin:0 auto;
+    text-align:center;
+}
+
+div#content div.about-us-section div#slider div#dot span.dot {
+    display:inline-block;
+    border-radius:50%;
+    background:#d3d3d3;
+    padding:8px;
+    margin:10px 5px;
+}
+
+div#content div.about-us-section div#slider div#dot span.dot.active {
+    background:gold;
+}
+
+@media (max-width:567px) {
+    #slider {
+        width: 100%;
+    }
+}
+
+/* -------------------------------- ABOUT US STYLING SECTION | CAROUSEL | END --------------------------------  */
+
+div#content div.about-us-section div.paragraphs-container h2 {
+    text-align:center;
+    font-size:4rem;
+    margin:25px;
+    font-family:var(--tangerine-font);
+}
+
+div#content div.about-us-section div.paragraphs-container div.separator {
+    width: 150px;
+    height: 3px;
+    background-color:gold;
+    margin-bottom:50px;
+}
+
+div#content div.about-us-section div.info-container {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    align-content:center;
+    overflow:hidden;
+}
+
+div#content div.about-us-section div.paragraphs-container {
+    display:flex;
+    flex-direction:column;
+    padding:25px;
+    align-items:center;
+    justify-content:space-between;
+}
+
+div#content div.about-us-section div.paragraphs-container p {
+    text-align:center;
+    font-family:var(--main-font);
+    font-size:1.50rem;
+    margin-bottom:25px;
+}
+
+div#content div.about-us-section div.paragraphs-container p:last-of-type {
+    border:1px solid gold ;
+    padding:10px;
+}
+
+div#content div.about-us-section div.paragraphs-container img {
+    width: 75px;
+}
+
+/* -------------------------------- Left side images section, start --------------------------------  */
+div#content div.about-us-section div.info-container div.side-images.left {
+    display: flex;
+    width:100%;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:center;
+    transform:scaleX(-1);
+    padding:100px 0;
+    gap:100px;
+}
+
+div#content div.about-us-section div.info-container div.side-images.left > div {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+div#content div.about-us-section div.info-container div.side-images.left div img {
+    width: 100%;
+}
+
+
+/* -------------------------------- First image, start --------------------------------  */
+div#content div.about-us-section div.info-container div.side-images.left > div:first-of-type {
+    width: 85%;
+    rotate: 322deg;
+    background-image:radial-gradient( circle, #fff75e, #ffda3d, #fdb833, #ffda3d, #fff75e, #fdb833, #ffda3d, #fff75e, #ffda3d, #fdb833);
+    background-size:100%;
+    background-position:center;
+    -webkit-mask-image:url('./../images/feather-2-gold.svg');
+    mask-image:url('./../images/feather-2-gold.svg');
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position:center;
+    mask-position:center;
+    transition:all 300ms ease;
+}
+
+div#content div.about-us-section div.info-container div.side-images.left > div:first-of-type:hover {
+    background-size:200%;    
+}
+
+div#content div.about-us-section div.info-container div.side-images.left > div:first-of-type img {
+    visibility:hidden;
+}
+/* -------------------------------- First image, end --------------------------------  */
+/* =================================================================================== */
+/* -------------------------------- Second image, start --------------------------------  */
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(2) {
+    width: 77%;
+    transform: scaleX(-1);
+    rotate: 30deg;
+    background-image:radial-gradient( circle, #fff75e, #ffda3d, #fdb833, #ffda3d, #fff75e, #fdb833, #ffda3d, #fff75e, #ffda3d, #fdb833);
+    background-size:70%;
+    background-position:center;
+    -webkit-mask-image:url('./../images/feather-2-gold.svg');
+    mask-image:url('./../images/feather-2-gold.svg');
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+    -webkit-mask-position:center;
+    mask-position:center;
+    transition:all 300ms ease;
+}
+
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(2):hover {
+    background-size:100%;
+}
+
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(2) img{
+    visibility:hidden;
+}
+/* -------------------------------- Second image, end --------------------------------  */
+/* =================================================================================== */
+/* -------------------------------- Third image, start --------------------------------  */
+
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(3) {
+    width: 65%;
+    rotate:330deg;
+    background-image:radial-gradient( circle, #fff75e, #ffda3d, #fdb833, #ffda3d, #fff75e, #fdb833, #ffda3d, #fff75e, #ffda3d, #fdb833);
+    background-size:50%;
+    background-position:center;
+    -webkit-mask-image:url('./../images/feather-2-gold.svg');
+    mask-image:url('./../images/feather-2-gold.svg');
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    transition:all 300ms ease;
+}
+
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(3):hover {
+    background-size:100%;
+}
+
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(3) img{
+    visibility:hidden;
+}
+/* -------------------------------- Third image, end --------------------------------  */
+/* =================================================================================== */
+/* -------------------------------- Fourth image, start --------------------------------  */
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(4) {
+    width:55%;
+    transform: scaleX(-1);
+    rotate:45deg;
+    background-image:radial-gradient( circle, #fff75e, #ffda3d, #fdb833, #ffda3d, #fff75e, #fdb833, #ffda3d, #fff75e, #ffda3d, #fdb833);
+    background-size:20%;
+    background-position:center;
+    -webkit-mask-image:url('./../images/feather-2-gold.svg');
+    mask-image:url('./../images/feather-2-gold.svg');
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+    -webkit-mask-position:center;
+    mask-position:center;
+    transition:all 300ms ease;
+}
+
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(4):hover {
+    background-size:100%;
+}
+
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(4) img{
+    visibility:hidden;
+}
+/* -------------------------------- Fourth image, end --------------------------------  */
+/* =================================================================================== */
+/* -------------------------------- Fifth image, start --------------------------------  */
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(5) {
+    width: 40%;
+    rotate:290deg;
+    background-image:radial-gradient( circle, #fff75e, #ffda3d, #fdb833, #ffda3d, #fff75e, #fdb833, #ffda3d, #fff75e, #ffda3d, #fdb833);
+    background-size:10%;
+    background-position:center;
+    -webkit-mask-image:url('./../images/feather-2-gold.svg');
+    mask-image:url('./../images/feather-2-gold.svg');
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+    -webkit-mask-position:center;
+    mask-position:center;
+    transition:all 500ms ease;
+}
+
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(5):hover {
+    background-size:100%;
+}
+
+div#content div.about-us-section div.info-container div.side-images.left > div:nth-of-type(5) img{
+    visibility:hidden;
+}
+/* -------------------------------- Fifth image, end --------------------------------  */
+/* -------------------------------- Left side images section, end --------------------------------  */
+
+
+/* -------------------------------- Right side images section, start --------------------------------  */
+
+div#content div.about-us-section div.info-container div.side-images.right {
+    display: flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+    
+}
+
+div#content div.about-us-section div.info-container div.side-images.right img {
+    width: 50%;
+}
+
+/* -------------------------------- Right side images section, end --------------------------------  */
+/* -------------------------------- ABOUT US STYLING SECTION END --------------------------------  */
+
+/* -------------------------------- CONTACT US STYLING SECTION START --------------------------------  */
+div#content div.contact-us-section {
+    height:100%;
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+}
+
+div#content div.contact-us-section div:first-of-type {
+    display:flex;
+    align-items:flex-end;
+}
+
+div#content div.contact-us-section div:first-of-type img {
+    width: 100%;
+}
+
+div#content div.contact-us-section div:nth-child(2):not(div.separator) {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:50px;
+    padding-bottom:25px;
+}
+
+div#content div.contact-us-section div:nth-child(2) h2 {
+    text-align:center;
+    font-family:var(--tangerine-font);
+    font-size:4rem;
+    margin:25px;
+}
+
+div#content div.contact-us-section div:nth-child(2) div.separator {
+    height: 3px;
+    background-color:gold;
+    width: 150px;
+}
+
+div#content div.contact-us-section div:nth-child(2) p {
+    font-family:var(--main-font);
+    text-align:center;
+    font-size:1.25rem;
+}
+
+div#content div.contact-us-section div:nth-child(2) ul:first-of-type {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    list-style-type:none;
+}
+
+div#content div.contact-us-section div:nth-child(2) ul:first-of-type li {
+    width: 100%;
+}
+
+div#content div.contact-us-section div:nth-child(2) ul:first-of-type li h3 {
+    font-family:var(--cinzel-font);
+    font-weight:400;
+    border:1px solid gold;
+    padding:15px;
+    font-size:1.5rem;
+    text-align:center;
+}
+
+div#content div.contact-us-section div:nth-child(2) ul:first-of-type li p {
+    padding:15px;
+    border:1px solid gold;
+}
+
+div#content div.contact-us-section div:nth-child(2) ul:nth-of-type(2) {
+    width:100%;
+    list-style:none;
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    gap:15px;
+}
+ 
+div#content div.contact-us-section div:nth-child(2) ul:nth-of-type(2) li{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+div#content div.contact-us-section div:nth-child(2) ul:nth-of-type(2) li p {
+    font-size:1.1rem;
+}
+
+div#content div.contact-us-section div:nth-child(2) form.contact-form {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:25px;
+    border:1px solid gold;
+    padding:25px;
+}
+
+div#content div.contact-us-section div:nth-child(2) form.contact-form div.form-line {
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding:0;
+}
+
+div#content div.contact-us-section div:nth-child(2) form.contact-form div.form-line label {
+    font-family:var(--main-font);
+}
+
+div#content div.contact-us-section div:nth-child(2) form.contact-form div.form-line input {
+    border:none;
+    outline:none;
+    height:2rem;
+    font-size:1rem;
+    font-style:italic;
+    border-bottom:2px solid gold;
+    margin:10px;
+    transition:all 200ms ease-in-out;
+}
+
+div#content div.contact-us-section div:nth-child(2) form.contact-form div.form-line input:focus {
+    scale:1.1;
+}
+
+div#content div.contact-us-section div:nth-child(2) form.contact-form button {
+    background-color:transparent;
+    padding:10px;
+    font-family:var(--main-font);
+    font-size:1.2rem;
+    border:1px solid gold;
+    outline:none;
+    align-self:center;
+    width:100%;
+    transition:all 200ms ease-in-out;
+}
+
+div#content div.contact-us-section div:nth-child(2) form.contact-form button:hover {
+    background-color:gold;
+    color:white;
+    font-weight:900;
+    scale:1.02;
+}
+
+div#content div.contact-us-section div:nth-child(2) form.contact-form button:active {
+    scale:0.95;
+}
+
+div#content div.contact-us-section i.fa-solid, i.fa-brands {
+    font-size:60px;
+    margin:15px;
+    background-image:linear-gradient(135deg, #fff75e, #ffda3d, #fdb833, #ffda3d, #fff75e, #fdb833, #ffda3d, #fff75e, #ffda3d, #fdb833);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-position:left;
+    background-size:300%;
+    transition:all 300ms ease-in-out;
+}
+
+div#content div.contact-us-section i.fa-solid:hover, i.fa-brands:hover {
+    background-size:600%;
+    background-position:right;
+}
+
+div#content div.contact-us-section div:nth-child(2) ul:last-of-type {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+div#content div.contact-us-section div:nth-child(2) ul:last-of-type li {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+} 
+
+div#content div.contact-us-section div:nth-child(2) ul:last-of-type li a {
+    font-family:var(--main-font);
+    color:black;
+    letter-spacing:3px;
+    font-size:.8rem;
+    font-weight:900;
+    text-decoration:none;
+}
+
+
+/* -------------------------------- CONTACT US STYLING SECTION END --------------------------------  */
+
+/* -------------------------------- FOOTER STYLING SECTION START --------------------------------  */
+
+
+div#content div.footer {
+    height: 50px;
+    grid-area:footer;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(#00000055,#00000055), url(../images/marble-texture.jpg);
+    background-size: cover;
+    margin-top:auto;
+}
+
+div#content div.footer p {
+    display:flex;
+    align-items:center;
+    color:gold;
+    font-family:var(--main-font);
+    letter-spacing:4px;
+    
+}
+
+div#content div.footer i.footer-icon {
+    font-size: 2.5rem;;
+    margin:0;
+    color:goldenrod;
+    margin-left:10px;
+}
+/* -------------------------------- FOOTER STYLING SECTION END --------------------------------  */
