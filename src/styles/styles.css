@@ -135,10 +135,6 @@ div#content div.header h1 {
     transition:all 500ms ease-in;
 }
 
-div#content div.header h1:hover {
-    background-size:300%;
-}
-
 div#content div.header ul.nav-bar {
     display:flex;
     justify-content: space-evenly;
@@ -1206,3 +1202,22 @@ div#content div.footer i.footer-icon {
     margin-left:10px;
 }
 /* -------------------------------- FOOTER STYLING SECTION END --------------------------------  */
+
+.shine-title-animation {
+    animation-name:shine-title-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes shine-title-animation {
+    0% {
+        background-size:150%;
+    }
+    20%{
+        background-size:300%;
+    }
+    100%{
+        background-size:150%;
+    }
+}

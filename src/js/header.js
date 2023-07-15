@@ -7,7 +7,7 @@ function header()
     header.setAttribute('id', 'header');
     header.classList.add('header');
     header.innerHTML = `
-    <h1>Odin's Restaurant</h1>
+    <h1 class='shine-title-animation'>Odin's Restaurant</h1>
     <ul class='nav-bar'> 
         <li class='home'>Home</li>
         <li class='menu'>Menu</li>
