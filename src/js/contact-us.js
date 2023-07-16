@@ -52,7 +52,7 @@ function contactUs ()
         </div>
         <button class='form-button'>Send feedback</button>
     </form>
-    <p>Thank you for considering Odin's Restaurant. Follow us on social media for updates, promotions, and a taste of our Norse-inspired culinary creations:
+    <p>Thank you for considering Odin's Restaurant. Follow us on social media for updates, promotions, and a taste of our Norse-inspired culinary creations.</p>
     <ul>
         <li>
             <i class="fa-brands fa-square-twitter"></i><a href='#'>@odins_restaurant</a>

@@ -50,7 +50,7 @@ div#content {
 
 div#content div.header {
     height:fit-content;
-     background:linear-gradient(#00000055,#00000055), url(../images/marble-texture.jpg);
+    background:linear-gradient(#00000055,#00000055), url(../images/marble-texture.jpg);
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -148,11 +148,12 @@ div#content div.header ul.nav-bar li {
     padding:15px;
     font-weight:900;
     font-size:1.2rem;
+    border:1px solid transparent;
+    transition:all 250ms ease-out;
 }
 
 div#content div.header ul.nav-bar li:hover {
     border:1px solid var(--color-white);
-    transition:all 150ms ease-in-out;
     cursor:pointer;
 }
 
